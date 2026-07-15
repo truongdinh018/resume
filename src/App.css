@@ -1,0 +1,153 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(25, 200, 185, 0.18), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(245, 195, 28, 0.16), transparent 50%),
+    linear-gradient(180deg, #f8f8f0 0%, #efe8d4 100%);
+}
+
+.page-inner {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 24px;
+  flex: 1;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.hero-card {
+  padding: 28px 28px 24px !important;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #794f27;
+}
+
+.hero-name {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #794f27;
+  line-height: 1.15;
+}
+
+.hero-title {
+  margin: 8px 0 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #725d42;
+}
+
+.hero-summary {
+  margin: 0 0 16px;
+  max-width: 52ch;
+  color: #725d42;
+  line-height: 1.55;
+}
+
+.hero-meta,
+.hero-actions,
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero-actions {
+  margin-top: 18px;
+}
+
+.main {
+  background: rgb(247, 243, 223);
+  border: 2px solid #c4b89e;
+  border-radius: 24px;
+  padding: 20px 18px 24px;
+}
+
+.panel-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.body-text {
+  margin: 8px 0 0;
+  color: #725d42;
+  line-height: 1.55;
+}
+
+.job-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.job-company {
+  margin: 4px 0 0;
+  font-weight: 700;
+  color: #794f27;
+}
+
+.bullet-list {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+  color: #725d42;
+  line-height: 1.55;
+}
+
+.bullet-list li + li {
+  margin-top: 6px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 140px) 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.faq-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .page-inner {
+    width: calc(100% - 20px);
+    padding-top: 24px;
+  }
+
+  .hero-card {
+    padding: 20px 18px 18px !important;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
