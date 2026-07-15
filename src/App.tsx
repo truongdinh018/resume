@@ -177,7 +177,7 @@ function ExperiencePanel() {
 function SkillsPanel() {
   return (
     <div className="panel-stack">
-      <Card color="app-green" pattern="none" className="skills-card">
+      <Card pattern="app-green" className="skills-card">
         <div className="section-title">
           <Title color="app-green" size="middle">
             Skills
