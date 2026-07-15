@@ -21,7 +21,9 @@ import {
   projects,
   skills,
 } from './data/resume';
+import { PrintResume } from './PrintResume';
 import './App.css';
+import './print.css';
 
 const focusAreas = [
   { label: 'ERP', color: 'app-teal' as const, icon: 'icon-diy' as const },
@@ -31,6 +33,11 @@ const focusAreas = [
 ];
 
 const projectIcons = ['icon-chat', 'icon-helicopter', 'icon-map'] as const;
+
+function printResume() {
+  document.title = `${profile.name} — Resume`;
+  window.print();
+}
 
 function Sidebar() {
   return (
@@ -63,7 +70,7 @@ function Sidebar() {
           <p className="hero-summary">{profile.summary}</p>
         </Typewriter>
 
-        <div className="time-chip">
+        <div className="time-chip no-print">
           <Time />
         </div>
 
@@ -77,8 +84,11 @@ function Sidebar() {
         </div>
 
         <div className="hero-actions">
+          <Button type="primary" size="large" block onClick={printResume}>
+            Print / PDF
+          </Button>
           <Button
-            type="primary"
+            type="default"
             size="large"
             block
             onClick={() => window.open(profile.github, '_blank')}
@@ -110,14 +120,11 @@ function AboutPanel() {
             About me
           </Title>
         </div>
-        <p className="body-text lead">
-          I design and ship Odoo modules and AI product surfaces — from RAG chat
-          with citations to document ingest and channel bots.
-        </p>
-        <p className="body-text">
-          I care about clear APIs, safe defaults, and UIs that feel approachable
-          — the kind of tools teammates actually enjoy opening every day.
-        </p>
+        {profile.about.map((line, index) => (
+          <p key={line} className={index === 0 ? 'body-text lead' : 'body-text'}>
+            {line}
+          </p>
+        ))}
       </Card>
 
       <div className="focus-grid">
@@ -283,7 +290,7 @@ function App() {
 
   return (
     <Cursor>
-      <div className="page">
+      <div className="page screen-only">
         <div className="sky" aria-hidden>
           <span className="cloud c1" />
           <span className="cloud c2" />
@@ -299,7 +306,12 @@ function App() {
               <Icon name="icon-miles" size={28} bounce />
               <span>Island Resume</span>
             </div>
-            <p className="banner-note">Built with animal-island-ui · Non-commercial</p>
+            <div className="banner-actions">
+              <Button type="primary" size="small" onClick={printResume}>
+                Print / PDF
+              </Button>
+              <p className="banner-note">Built with animal-island-ui · Non-commercial</p>
+            </div>
           </header>
 
           <div className="layout">
@@ -324,6 +336,7 @@ function App() {
 
         <Footer type="sea" seamless />
       </div>
+      <PrintResume />
     </Cursor>
   );
 }

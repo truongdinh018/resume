@@ -12,6 +12,11 @@ export const profile = {
   summary:
     'Build ERP and AI systems on Odoo — RAG chat, document parsing, and agent tooling that make product teams ship faster.',
   tagline: 'Welcome to my island! 🏝️',
+  about: [
+    'I design and ship Odoo modules and AI product surfaces — from RAG chat with citations to document ingest and channel bots.',
+    'I care about clear APIs, safe defaults, and UIs that feel approachable — the kind of tools teammates actually enjoy opening every day.',
+  ],
+  focus: ['ERP', 'AI Agents', 'Knowledge Bases', 'DX'],
 };
 
 export const skills: { name: string; level: number; color: TagColor }[] = [

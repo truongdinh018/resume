@@ -183,6 +183,14 @@
   color: #9f927d;
 }
 
+.banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  justify-content: flex-end;
+}
+
 .layout {
   display: flex;
   flex-direction: column;

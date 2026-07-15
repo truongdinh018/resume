@@ -1,0 +1,144 @@
+/* Screen: hide print sheet */
+.print-resume {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  html,
+  body,
+  #root {
+    background: #fff !important;
+    color: #222 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Hide interactive site chrome */
+  .screen-only,
+  .sky,
+  .top-banner,
+  .animal-cursor,
+  footer,
+  [class*='animal-footer'],
+  .no-print {
+    display: none !important;
+  }
+
+  .animal-cursor--force,
+  .animal-cursor--force * {
+    cursor: auto !important;
+  }
+
+  .print-resume {
+    display: block !important;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-family: 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-header {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #333;
+  }
+
+  .print-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #444;
+  }
+
+  .print-resume h1 {
+    margin: 0;
+    font-size: 22pt;
+    line-height: 1.15;
+    color: #111;
+  }
+
+  .print-role {
+    margin: 4px 0 2px;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .print-contact {
+    margin: 0;
+    font-size: 10pt;
+    color: #555;
+  }
+
+  .print-resume section {
+    break-inside: avoid;
+    margin-bottom: 12px;
+  }
+
+  .print-resume h2 {
+    margin: 0 0 6px;
+    font-size: 12pt;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #111;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 3px;
+  }
+
+  .print-resume p {
+    margin: 0 0 6px;
+  }
+
+  .print-focus {
+    margin-top: 4px !important;
+  }
+
+  .print-job,
+  .print-project {
+    margin-bottom: 8px;
+  }
+
+  .print-job-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .print-resume ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+  }
+
+  .print-resume li {
+    margin-bottom: 3px;
+  }
+
+  .print-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 16px;
+    list-style: disc;
+  }
+
+  .print-tags {
+    color: #555;
+    font-size: 10pt;
+  }
+}
