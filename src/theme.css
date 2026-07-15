@@ -273,7 +273,7 @@ body {
   border: none;
   background: transparent;
   color: var(--page-ink-soft);
-  font-family: Nunito, 'Noto Sans SC', sans-serif;
+  font-family: Nunito, 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
   font-weight: 800;
   font-size: 12px;
   letter-spacing: 0.02em;

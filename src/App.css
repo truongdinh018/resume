@@ -205,7 +205,7 @@
   border-radius: 999px;
   background: #19c8b9;
   color: #794f27;
-  font-family: Nunito, 'Noto Sans SC', sans-serif;
+  font-family: Nunito, 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.02em;

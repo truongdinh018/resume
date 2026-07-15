@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://truongdinh018.github.io/animal-island-resume/"><img src="https://img.shields.io/badge/🌐_Live_Resume-19c8b9?style=for-the-badge&labelColor=794f27" alt="Live Resume"/></a>
+  <a href="https://truongdinh018.github.io/resume/"><img src="https://img.shields.io/badge/🌐_Live_Resume-19c8b9?style=for-the-badge&labelColor=794f27" alt="Live Resume"/></a>
   <a href="mailto:truongdinh@xboss.com"><img src="https://img.shields.io/badge/Email-truongdinh%40xboss.com-f5c31c?style=for-the-badge&labelColor=794f27" alt="Email"/></a>
   <a href="https://github.com/truongdinh018"><img src="https://img.shields.io/badge/GitHub-truongdinh018-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
@@ -34,7 +34,7 @@ I design and ship **Odoo modules** and **AI product surfaces** — from RAG chat
 I care about clear APIs, safe defaults, and UIs that feel approachable — the kind of tools teammates actually enjoy opening every day.
 
 > Live interactive resume (Animal Crossing style UI):  
-> **https://truongdinh018.github.io/animal-island-resume/**
+> **https://truongdinh018.github.io/resume/**
 
 ---
 
@@ -74,7 +74,7 @@ I care about clear APIs, safe defaults, and UIs that feel approachable — the k
 
 - Email: [truongdinh@xboss.com](mailto:truongdinh@xboss.com)
 - GitHub: [@truongdinh018](https://github.com/truongdinh018)
-- Website: [animal-island-resume](https://truongdinh018.github.io/animal-island-resume/)
+- Website: [resume](https://truongdinh018.github.io/resume/)
 
 ---
 
@@ -89,8 +89,8 @@ I care about clear APIs, safe defaults, and UIs that feel approachable — the k
 ### Dev
 
 ```bash
-git clone https://github.com/truongdinh018/animal-island-resume.git
-cd animal-island-resume
+git clone https://github.com/truongdinh018/resume.git
+cd resume
 npm install
 npm run dev
 ```
@@ -107,7 +107,7 @@ npm run build:pages
 npx gh-pages -d dist -b gh-pages
 ```
 
-Site: https://truongdinh018.github.io/animal-island-resume/
+Site: https://truongdinh018.github.io/resume/
 
 </details>
 
