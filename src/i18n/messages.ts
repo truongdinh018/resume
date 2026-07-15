@@ -34,7 +34,7 @@ type Messages = {
 
 export const ui: Record<Lang, Messages> = {
   en: {
-    brand: 'Island Resume',
+    brand: 'My Resume',
     online: 'Online',
     visitGithub: 'Visit GitHub',
     print: 'Print',
@@ -64,7 +64,7 @@ export const ui: Record<Lang, Messages> = {
     langVi: 'VI',
   },
   vi: {
-    brand: 'Hồ sơ đảo',
+    brand: 'Resume của tôi',
     online: 'Trực tuyến',
     visitGithub: 'Xem GitHub',
     print: 'In',
